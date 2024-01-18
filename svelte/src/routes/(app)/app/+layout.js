@@ -41,7 +41,7 @@ export function load({url}) {
 
         options = {
             ...options,
-            private: [
+            admin: [
                 {title: '회원 관리', value: 'userManagement'},
                 {title: '신고 관리', value: 'reportManagement'}
             ]
