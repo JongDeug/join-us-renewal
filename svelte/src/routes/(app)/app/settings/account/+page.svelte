@@ -13,11 +13,13 @@
             <div class="main-content__account-form">
                 <form class="account-form" action="">
                     <div class="account-form__title">
-                        <h3>회원 정보</h3>
+                        <h3>내 정보</h3>
                     </div>
 
-                    <label class="account-form__label" for="id">아이디</label>
-                    <input class="account-form__input" name="id" placeholder="Id" type="id" id="id">
+<!--                    <label class="account-form__label" for="id">아이디</label>-->
+<!--                    <input class="account-form__input" name="id" placeholder="Id" type="id" id="id">-->
+                    <label class="account-form__label" for="email">이메일</label>
+                    <input class="account-form__input" name="email" placeholder="Email" type="email" id="email">
 
                     <label class="account-form__label" for="password">비밀번호</label>
                     <input class="account-form__input" name="password" placeholder="Password" type="password"
@@ -27,12 +29,6 @@
                     <input class="account-form__input" name="password-check" placeholder="Password"
                            type="password-check"
                            id="password-check">
-
-                    <label class="account-form__label" for="email">이메일</label>
-                    <input class="account-form__input" name="email" placeholder="Email" type="email" id="email">
-
-                    <label class="account-form__label" for="name">이름</label>
-                    <input class="account-form__input" name="name" placeholder="Name" type="name" id="name">
 
                     <label class="account-form__label" for="nickname">닉네임</label>
                     <input class="account-form__input" name="nickname" placeholder="Nickname" type="nickname"

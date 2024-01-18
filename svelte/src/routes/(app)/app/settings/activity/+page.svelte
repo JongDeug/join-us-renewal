@@ -1,7 +1,7 @@
 <script>
-    import Post from "$lib/components/Post.svelte";
+    import Post from "$lib/components/Post/Post.svelte";
     import Pagination from "$lib/components/Pagination.svelte";
-    import MyComment from "$lib/components/MyComment.svelte";
+    import MyComment from "$lib/components/Comment/MyComment.svelte";
     import {page} from "$app/stores";
     import Tab from "$lib/components/Tab.svelte";
 
@@ -23,7 +23,7 @@
             <Tab bind:selected {options}/>
         </div>
 
-        {#if selected == "post"}
+        {#if selected === "post"}
             <!-- Post -->
             <Post/>
             <Post/>
@@ -31,13 +31,13 @@
             <Post/>
             <Post/>
             <Pagination/>
-        {:else if selected == "comment"}
+        {:else if selected === "comment"}
             <!-- My Comment -->
             <MyComment/>
             <MyComment/>
             <MyComment/>
             <Pagination/>
-        {:else if selected == "note"}
+        {:else if selected === "note"}
             <!-- Note -->
         {/if}
     </div>

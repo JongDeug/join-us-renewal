@@ -1,12 +1,16 @@
 <script>
     import LikeButton from "$lib/components/LikeButton.svelte";
     import CommentInfo from "$lib/components/Comment/CommentInfo.svelte";
+    import CommentMeatBalls from "$lib/components/Comment/CommentMeatBalls.svelte";
 </script>
 
 <div class="comment">
     <div class="col">
         <!-- Comment Info -->
-        <CommentInfo/>
+        <div class="row">
+            <CommentInfo/>
+            <CommentMeatBalls/>
+        </div>
 
         <!-- Comment Content -->
         <div class="comment-content">
@@ -19,10 +23,6 @@
         </div>
         <!-- //Comment Content -->
 
-        <!-- Reply Button -->
-        <div class="row">
-            <button class="comment__btn">댓글쓰기</button>
-        </div>
     </div>
 
     <div class="col">
@@ -35,12 +35,13 @@
   .comment {
     display: flex;
     border-bottom: 2px solid var(--border-color);
-    min-height: 300px;
+    min-height: 250px;
     padding: 20px 0;
 
     .row {
       display: flex;
-      justify-content: right;
+      justify-content: space-between;
+      margin-right: 30px;
     }
 
     &__btn {

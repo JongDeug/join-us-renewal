@@ -83,7 +83,7 @@
     &__search {
       display: flex;
       justify-content: right;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     table, th, td {
@@ -149,7 +149,7 @@
     &__btn {
       padding: 3px;
       background-color: white;
-      border: 2px solid black;
+      border: 1px solid black;
       border-radius: 5px;
       font-weight: 600;
       margin-left: 5px;

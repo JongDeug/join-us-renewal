@@ -23,14 +23,14 @@
         on:click|self={() => dialog.close()}
 >
     <div class="modal__inner">
-        <div class="row1">
+        <div class="modal__title">
             <h2>게시글 신고</h2>
-            <button class="modal__btn" on:click={() => dialog.close()}>
+            <button class="modal__btn--close" on:click={() => dialog.close()}>
                 <img src="/close.png" alt="" width="24" height="24">
             </button>
         </div>
 
-        <div class="row2">
+        <div class="modal__content">
             <div class="col1">
                 신고사유
             </div>
@@ -62,8 +62,8 @@
             </div>
         </div>
         <div class="row3">
-            <button class="modal__btn--cancel">취소</button>
             <button class="modal__btn--confirm">확인</button>
+            <button class="modal__btn--cancel">취소</button>
         </div>
         <!-- svelte-ignore a11y-autofocus -->
         <!-- <button autofocus on:click={() => dialog.close()}>close modal</button> -->
@@ -72,72 +72,12 @@
 
 <style lang="scss">
   .modal {
-    width: 35%;
+    width: 600px;
+    min-height: 300px;
     border-radius: 5px;
     margin: 80px auto;
     border: 0;
 
-    &__inner {
-      padding: 20px;
-
-      .row1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid var(--border-color);
-      }
-
-      .row2 {
-        padding: 5px 0;
-        display: flex;
-
-        .col1 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30%;
-          border: 2px solid var(--border-color);
-          background-color: var(--border-color);
-        }
-
-        .col2 {
-          width: 100%;
-          border: 2px solid var(--border-color);
-          padding: 20px;
-        }
-      }
-
-      .row3 {
-        display: flex;
-        margin-top: 10px;
-        justify-content: right;
-        gap: 10px;
-      }
-    }
-
-    &__btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      background-color: var(--ivory);
-      border-radius: 5px;
-      border: 2px solid;
-
-      &--cancel {
-        padding: 10px 20px;
-        @include ivory-btn;
-        background-color: white;
-      }
-      &--confirm {
-        padding: 10px 20px;
-        @include ivory-btn;
-      }
-    }
-
-    /* */
     &::backdrop {
       background: rgba(0, 0, 0, 0.3);
     }
@@ -147,6 +87,68 @@
 
       &::backdrop {
         animation: fade 0.2s ease-out;
+      }
+    }
+
+    &__inner {
+      height: 100%;
+      padding: 20px;
+
+      .row3 {
+        display: flex;
+        margin-top: 10px;
+        justify-content: right;
+        gap: 10px;
+      }
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+
+    &__content {
+      padding: 5px 0;
+      display: flex;
+
+      .col1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        border: 2px solid var(--border-color);
+        background-color: var(--border-color);
+      }
+
+      .col2 {
+        width: 100%;
+        border: 2px solid var(--border-color);
+        padding: 20px;
+      }
+    }
+
+    &__btn {
+      &--close {
+        display: flex;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+
+      &--cancel {
+        padding: 5px 10px;
+        @include ivory-btn;
+        background-color: white !important;
+      }
+
+      &--confirm {
+        padding: 5px 10px;
+        @include ivory-btn;
       }
     }
   }

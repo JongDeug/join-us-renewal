@@ -5,9 +5,13 @@
         <span class="signup-form__text">JoinUs에 오신것을 환영합니다. 😁</span>
     </div>
 
+<!--    <div class="signup-form__item">-->
+<!--        <label class="signup-form__label" for="id">아이디</label>-->
+<!--        <input class="signup-form__input" name="id" placeholder="Id" type="id" id="id">-->
+<!--    </div>-->
     <div class="signup-form__item">
-        <label class="signup-form__label" for="id">아이디</label>
-        <input class="signup-form__input" name="id" placeholder="Id" type="id" id="id">
+        <label class="signup-form__label" for="email">이메일</label>
+        <input class="signup-form__input" name="email" placeholder="Email" type="email" id="email">
     </div>
 
     <div class="signup-form__item">
@@ -19,16 +23,6 @@
         <label class="signup-form__label" for="password-check">비밀번호 확인</label>
         <input class="signup-form__input" name="password-check" placeholder="Password" type="password-check"
                id="password-check">
-    </div>
-
-    <div class="signup-form__item">
-        <label class="signup-form__label" for="email">이메일</label>
-        <input class="signup-form__input" name="email" placeholder="Email" type="email" id="email">
-    </div>
-
-    <div class="signup-form__item">
-        <label class="signup-form__label" for="name">이름</label>
-        <input class="signup-form__input" name="name" placeholder="Name" type="name" id="name">
     </div>
 
     <div class="signup-form__item">

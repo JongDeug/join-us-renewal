@@ -32,7 +32,7 @@
 <style lang="scss">
   .messenger-write {
     &__item {
-      border-bottom: 1px solid;
+      //border-bottom: 1px solid;
       padding: 10px 0;
       display: flex;
       justify-content: left;
@@ -47,6 +47,7 @@
     &__input, &__textarea {
       width: 100%;
       border: 1px solid var(--border-color);
+      border-radius: 5px;
       box-shadow: 1px 1px 0 var(--border-color);
       padding: 5px 10px;
     }

@@ -44,13 +44,13 @@
                 <Tab bind:selected {options}/>
             </div>
 
-            {#if selected == "write"}
+            {#if selected === "write"}
                 <MessengerWrite on:closeModal={handleModal}/>
-            {:else if selected == "receive"}
+            {:else if selected === "receive"}
                 <MessengerReceive/>
-            {:else if selected == "send"}
+            {:else if selected === "send"}
                 <MessengerSend/>
-            {:else if selected == "trash"}
+            {:else if selected === "trash"}
                 <MessengerTrash/>
             {/if}
         </div>
@@ -66,7 +66,7 @@
     width: 800px;
     min-height: 300px;
     border-radius: 0.2em;
-    border: 0px;
+    border: 0;
     margin: 80px auto;
 
     &::backdrop {

@@ -1,9 +1,9 @@
 <script>
-    import Comment from "$lib/components/Comment.svelte";
+    import Comment from "$lib/components/Comment/Comment.svelte";
     import Introduce from "$lib/components/Introduce.svelte";
     import LikeButton from "$lib/components/LikeButton.svelte";
     import PostInfo from "$lib/components/Post/PostInfo.svelte";
-    import PostSettings from "$lib/components/Post/PostSettings.svelte";
+    import PostMeatballs from "$lib/components/Post/PostMeatballs.svelte";
 
     let whichBoard = true; // 구인 게시판(true), 질문 게시판(false) 선택
 </script>
@@ -26,7 +26,7 @@
                     <PostInfo/>
 
                     <!-- Post Settings -->
-                    <PostSettings/>
+                    <PostMeatballs/>
                 </div>
 
                 <div class="row row2">

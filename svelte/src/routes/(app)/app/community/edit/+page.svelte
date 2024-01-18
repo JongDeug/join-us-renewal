@@ -1,3 +1,10 @@
+<script>
+    import ToggleButton from "$lib/components/ToggleButton.svelte";
+
+    let checked = false;
+    let isAdmin = true;
+</script>
+
 <div class="wrapper">
     <div class="commercial-content">
     </div>
@@ -26,6 +33,11 @@
 
                 <label class="board-form__label" for="">본문</label>
                 <textarea class="board-form__textarea"></textarea>
+
+                {#if isAdmin}
+                    <ToggleButton bind:checked/>
+                {/if}
+
 
                 <div class="row">
                     <a href="/app/community/detail" class="board-form__btn board-form__btn--color-white">취소</a>

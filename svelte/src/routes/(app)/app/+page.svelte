@@ -1,8 +1,8 @@
 <script>
-    import Post from "$lib/components/Post.svelte";
+    import Post from "$lib/components/Post/Post.svelte";
     import Pagination from "$lib/components/Pagination.svelte";
     import Introduce from "$lib/components/Introduce.svelte";
-    import PostTab from "$lib/components/PostTab.svelte";
+    import PostTab from "$lib/components/Post/PostTab.svelte";
     import Sort from "$lib/components/Sort.svelte";
     import Search from "$lib/components/Search.svelte";
 

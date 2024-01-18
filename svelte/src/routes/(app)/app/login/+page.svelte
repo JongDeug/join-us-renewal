@@ -6,8 +6,8 @@
     </div>
 
     <div class="login-form__item">
-        <label class="login-form__label" for="id">아이디</label>
-        <input class="login-form__input" name="id" placeholder="Id" type="id">
+        <label class="login-form__label" for="id">이메일</label>
+        <input class="login-form__input" name="id" placeholder="Email" type="id">
     </div>
 
     <div class="login-form__item">
