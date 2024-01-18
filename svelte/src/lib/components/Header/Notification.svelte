@@ -1,5 +1,5 @@
 <script>
-    import clickOutside from "$lib/ts/clickOutside";
+    import {clickOutside} from "$lib/index";
     import {fly} from 'svelte/transition';
 
     let clickNotification = false; // 알림 메뉴 표시

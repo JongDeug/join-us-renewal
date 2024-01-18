@@ -1,6 +1,6 @@
 <script>
     import {fly} from 'svelte/transition';
-    import clickOutside from "$lib/ts/clickOutside";
+    import {clickOutside} from "$lib/index";
 
     export let clickSort;
 </script>

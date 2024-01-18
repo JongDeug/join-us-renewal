@@ -1,7 +1,8 @@
 <script>
     import {fly} from 'svelte/transition';
-    import clickOutside from "$lib/ts/clickOutside";
     import ReportModal from "$lib/components/ReportModal.svelte";
+    import {clickOutside} from "$lib/index";
+
 
     let clickSettingBtn = false;
     let clickReport = false;
