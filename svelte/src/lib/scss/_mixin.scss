@@ -1,0 +1,143 @@
+//아이보리색 버튼
+@mixin ivory-btn {
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: var(--ivory);
+  box-shadow: 3px 3px 0px black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+  }
+
+  &:active {
+    background-color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+}
+
+// 오렌지색 버튼
+@mixin orange-btn {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+  }
+
+  &:active {
+    background-color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+}
+
+// 쪽지 테이블
+@mixin table {
+  &__search {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+  }
+
+  table, th, td {
+    border-collapse: collapse;
+    padding: 5px 8px;
+  }
+
+  th {
+    border-right: 1px solid;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 40px;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__input {
+    transform: scale(1.3);
+  }
+
+  &__head {
+    background-color: var(--ivory);
+
+    &3 {
+      width: 30%;
+    }
+
+    &4 {
+      width: 40%;
+    }
+  }
+
+  &__detail {
+    &:hover {
+      color: var(--focus)
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid black;
+    height: 40px;
+    background-color: var(--ivory);
+  }
+
+  &__btn {
+    padding: 3px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: 5px;
+    //margin: 0 10px 0 0;
+    //padding: 3px 5px;
+    //border: 0;
+    //color: white;
+    //background-color: orange;
+    //border-radius: 10px;
+  }
+}
+
+//Footer 디자인
+@mixin footer {
+  margin-top: 10px;
+  height: 150px;
+  background-color: #f1f0f0;
+}
