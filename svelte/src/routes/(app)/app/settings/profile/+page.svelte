@@ -15,7 +15,7 @@
                                id="nickname"
                                disabled>
 
-                        <label class="profile-form__label" for="email">인삿말</label>
+                        <label class="profile-form__label" for="email">인사말</label>
                         <input class="profile-form__input" name="email" placeholder="Email" type="email" id="email">
 
                         <label class="profile-form__label" for="email">보유 기술</label>

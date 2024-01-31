@@ -8,6 +8,6 @@ export class AppController {
 
   @Get()
   getHello() {
-    return 'hello world';
+    return 'hello';
   }
 }
